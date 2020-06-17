@@ -88,6 +88,9 @@ function checkAnswer()
   {
     console.log("running game set to false");
     runningGame = false;
+    // set qpic to completed screen
+    var filePath = "CompletedRoundScreen.png";
+    picture.setAttribute("src",filePath);
   }
   if(runningGame == true)
   {
