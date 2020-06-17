@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>OCR A MCQ Trainer</title>
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
 
     <div class="topContainer">
       <h1>OCR A MCQ Trainer</h1>
     </div>
+
     <div class="selectorContainer">
       <label for="noOfQuestions">Number of questions</label>
       <select class="selectors" name="noOfQuestions">
@@ -45,9 +47,10 @@
       </select>
     </div>
 
-    <button id="startButton" type="button" name="startButton">Start Trainer</button>
+    <button class="startBTN" id="startButton" type="button" name="startButton">Start Trainer</button>
+    <button class="randBTN" type="button" name="randQ">Get a random question</button>
 
-    <img id="questionPicture" src="frontLogo.png" alt="opeLogo of MCQ App">
+    <img class="questionImg" id="questionPicture" src="frontLogo.png" alt="opeLogo of MCQ App">
     <progress id="timeBar" value="100" max="100">80</progress>
 
     <div class="answerButtons">
@@ -59,6 +62,10 @@
 
     </div>
 
+    <h2>Player score: </h2>
 
+
+  <script src="questionData.js" charset="utf-8"></script>
+  <script src="mcqApp.js" charset="utf-8"></script>
   </body>
 </html>
