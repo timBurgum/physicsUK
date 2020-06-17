@@ -1,0 +1,32 @@
+h1 {
+  font-size: 60px;
+  color: blue;
+}
+body {
+  text-align: center;
+}
+
+.ansBTN{
+  margin: 20px;
+  width: 120px;
+  height: 45px;
+}
+.randBTN{
+  margin: 40px auto 20px auto;
+  width: 30%;
+  height: 60px;
+}
+
+#startButton{
+  margin: 40px auto 20px auto;
+  width: 30%;
+  height: 60px;
+}
+#questionPicture{
+  display: block;
+  width: 50%;
+  margin: 10px auto 30px auto;
+}
+#timeBar{
+  width: 60%;
+}
