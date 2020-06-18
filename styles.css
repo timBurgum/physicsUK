@@ -5,8 +5,16 @@ body{
 }
 h1{
   font: tahoma;
-  font-size: 90px;
+  font-size: 3em;
 }
 .top-section{
-  margin: 400px;
+  margin: 40px;
 }
+.mcqButton{
+  display: block;
+  width: 33%;
+  background-color: #a8df65;
+  }
+  .mcqImg{
+    width: 100%;
+  }

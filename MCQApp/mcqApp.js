@@ -8,7 +8,7 @@ var currentQ;
 var qNumber = 0;
 var playerScore = 0;
 var runningGame = false;
-var timerOn;
+var timerOn = true;
 var timeBar = document.querySelectorAll(".timer")[0];
 var picture = document.querySelectorAll("img")[0];
 console.log(picture);
@@ -193,15 +193,16 @@ function whichTimeSelected()
     }
 
   }
-    if(which!="noTimer")
+    if(which=="noTimer")
     {
-      timerOn = true;
-      setTimer(which);
+
+        timerOn = false;
     }
     else
     {
-      //turn off timer
-      timerOn = false;
+      timerOn = true;
+      setTimer(which);
+
     }
 
 }

@@ -1,11 +1,20 @@
 h1 {
-  font-size: 60px;
-  color: blue;
+  font-size: 4em;
+  color: #184d47;
+  padding: 0;
+
+  margin: 5px auto 10px auto;
+}
+h4{
+color: #184d47;
 }
 body {
   text-align: center;
+  background-color: #f5f5f5
 }
-
+.selectorContainer{
+  margin: 0px;
+}
 .ansBTN{
   margin: 20px;
   width: 120px;
@@ -22,13 +31,15 @@ body {
 
 }
 .timeSelectorDiv{
-  margin: 20px auto 20px auto;
+  margin: 0px auto 20px auto;
+  padding-top: 0px;
   width: 80%;
 
 }
 .timeSelectors{
   display: inline-block;
   margin: 30px;
+  margin-top: 15px;
 }
 
 #startButton{
