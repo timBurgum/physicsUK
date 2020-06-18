@@ -1,71 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>OCR A MCQ Trainer</title>
-    <link rel="stylesheet" href="style.css">
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>OCR A MCQ Trainer</title>
+  <link rel="stylesheet" href="style.css">
 
-    <div class="topContainer">
-      <h1>OCR A MCQ Trainer</h1>
+</head>
+
+<body>
+
+  <div class="topContainer">
+    <h1>OCR A MCQ Trainer</h1>
+  </div>
+
+  <div class="selectorContainer">
+    <label for="noOfQuestions">Number of questions</label>
+    <select class="selectors" name="noOfQuestions">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    </select>
+    <label for="topics">Please select a topic</label>
+    <select class="selectors" name="topics">
+      <option value="any">Any</option>
+      <option value="forcesAndMotion">Forces & Motion</option>
+      <option value="workEnergyPower">Work, Energy & Power</option>
+      <option value="materialsSprings">Materials & Springs</option>
+      <option value="waves">Waves</option>
+      <option value="quantum">Quantum</option>
+      <option value="thermalPhysics">Thermal Physics</option>
+      <option value="shmCircular">SHM & Circular Motion</option>
+      <option value="gravitationalFields">Gravitational Fields</option>
+      <option value="astro">Astrophysics</option>
+      <option value="capElecFields">Capacitors and Electric Fields</option>
+      <option value="nuclear">Nuclear Physics</option>
+      <option value="medical">Medical Physics</option>
+    </select>
+    <label for="paper">Please select a paper</label>
+    <select class="selectors" name="paper">
+      <option value="any">Any</option>
+      <option value="H156/01">Breadth in Physics</option>
+      <option value="H156/02">Depth in Physics</option>
+      <option value="H556/01">Modelling Physics</option>
+      <option value="H556/02">Exploring Physics</option>
+    </select>
+    <label for="year">Please select a paper year</label>
+    <select class="selectors" name="year">
+      <option value="any">Any</option>
+      <option value="2015">Practice Papers</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+    </select>
+  </div>
+  <div class="timeSelectorDiv">
+    <h3 class="inLine">⏱</h3>
+    <div class="timeSelectors">
+
+      <input class="radioBTN" type="radio" id="1min" name="time" value="60">
+      <label for="1min">1 Minutes</label><br>
+      <input class="radioBTN" type="radio" id="2min" name="time" value="120">
+      <label for="2min">2 Minutes</label><br>
+      <input class="radioBTN" type="radio" id="3min" name="time" value="180">
+      <label for="3min">3 Minutes</label><br>
+      <input class="radioBTN" type="radio" id="noTimer" name="time" value="noTimer">
+      <label for="noTimer">Turn off Timer</label>
+
     </div>
+    <h3 class="inLine">⏱</h3>
+  </div>
 
-    <div class="selectorContainer">
-      <label for="noOfQuestions">Number of questions</label>
-      <select class="selectors" name="noOfQuestions">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <label for="topics">Please select a topic</label>
-      <select class="selectors" name="topics">
-        <option value="any">Any</option>
-        <option value="motion">Motion</option>
-        <option value="waves">Waves</option>
-        <option value="energy">Energy</option>
-        <option value="quantum">Quantum</option>
-      </select>
-      <label for="paper">Please select a paper</label>
-      <select class="selectors" name="paper">
-        <option value="any">Any</option>
-        <option value="breadth">Breadth in Physics</option>
-        <option value="depth">Depth in Physics</option>
-        <option value="modelling">Modelling Physics</option>
-        <option value="exploring">Exploring Physics</option>
-      </select>
-      <label for="year">Please select a paper year</label>
-      <select class="selectors" name="year">
-        <option value="any">Any</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-      </select>
-    </div>
+  <button class="startBTN" id="startButton" type="button" name="startButton">Start Trainer</button>
+  <!--<button class="randBTN" type="button" name="randQ">Get a random question</button>-->
 
-    <button class="startBTN" id="startButton" type="button" name="startButton">Start Trainer</button>
-    <button class="randBTN" type="button" name="randQ">Get a random question</button>
+  <img class="questionImg" id="questionPicture" src="frontLogo.png" alt="opeLogo of MCQ App">
+  <progress class="timer" id="timeBar" value="100" max="100">80</progress>
 
-    <img class="questionImg" id="questionPicture" src="frontLogo.png" alt="opeLogo of MCQ App">
-    <progress id="timeBar" value="100" max="100">80</progress>
+  <div class="answerButtons">
 
-    <div class="answerButtons">
+    <button class="ansBTN" type="button" name="answerA">A</button>
+    <button class="ansBTN" type="button" name="answerB">B</button>
+    <button class="ansBTN" type="button" name="answerC">C</button>
+    <button class="ansBTN" type="button" name="answerD">D</button>
 
-      <button class="ansBTN" type="button" name="answerA">A</button>
-      <button class="ansBTN" type="button" name="answerB">B</button>
-      <button class="ansBTN" type="button" name="answerC">C</button>
-      <button class="ansBTN" type="button" name="answerD">D</button>
+  </div>
 
-    </div>
-
-    <h2>Player score: </h2>
+  <h2>Player score: </h2>
+  <!--<button class="testBTN" type="button" name="randQ">testAFunction</button>-->
 
 
   <script src="questionData.js" charset="utf-8"></script>
   <script src="mcqApp.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
