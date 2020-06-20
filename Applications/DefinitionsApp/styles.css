@@ -1,0 +1,125 @@
+body{
+
+background: linear-gradient(#f7fbe1,#438a5e) fixed;
+
+}
+.topContainer{
+margin-top: 35px;
+}
+.selections{
+  margin: 20px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 30px 10px 30px 10px;
+  width: 40%;
+  margin: 5px auto 10px auto;
+  box-shadow: 5px 5px 5px #438a5e;
+}
+.newDeffBTN{
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 30px 10px 30px 10px;
+  width: 40%;
+  margin: 5px auto 10px auto;
+  box-shadow: 5px 5px 5px #438a5e;
+  cursor: pointer;
+}
+.topic{
+  display: inline-block;
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 3px solid black;
+  border-radius: 30px 10px 30px 10px;
+  box-shadow: 5px 5px 5px #438a5e;
+  cursor: pointer;
+}
+.answers{
+  margin: 5px auto 5px auto;
+}
+.answer{
+  margin: 30px auto 30px auto;
+  width: 65%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mainSection{
+
+}
+p{
+  margin: 30px auto 30px auto;
+  width: 40%;
+  font-size: 2em;
+  font-style: italic;
+}
+.correct{
+  background-color: green;
+}
+.incorrect{
+  background-color: red;
+}
+
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+
+  border: 4px solid black;
+
+  border-radius: 10px 30px 10px 30px;
+  box-shadow: 5px 5px 5px #438a5e;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
