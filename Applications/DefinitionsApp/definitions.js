@@ -13,10 +13,22 @@ for(i=0;i<topicBTNs.length;i++)
 {
   document.querySelectorAll(".topic")[i].addEventListener("click", function(e){
     currentTopic = this.innerHTML;
+// clear colours from all btns and set selected to green
+    clearBtnColours();
+    resetColors();
+    this.classList.add("correct");
     filterTopics(currentTopic);
     getDefinition();
     setTerms();
   });
+}
+function clearBtnColours()
+{
+  for(i=0;i<document.querySelectorAll(".hvr-grow").length;i++)
+  {
+  document.querySelectorAll(".hvr-grow")[i].classList.remove("correct");
+  document.querySelectorAll(".hvr-grow")[i].classList.remove("incorrect");
+  }
 }
 
 // ************ Answer btns **********************//
@@ -82,7 +94,7 @@ function getDefinition()
   //set global for def index
   currentDeffIndex = randNum
 }
-function setTerms()
+function setTerms() //You are getting doubles so need another loop
 {
   //clear current setTerms
   document.querySelectorAll(".answer")[0].innerHTML = "";
@@ -105,15 +117,23 @@ function setTerms()
     }
   }
 
+
+  //check if term exists
+  var terms = [];
   for(i=0;i<document.querySelectorAll(".answer").length;i++)//this will loop through all of the answer boxes
   {
     var randNum2 = Math.floor(Math.random()*defs.length);
 
       // must add check to see if term is already included in answers
-    if(remaining.includes(i))
-    {
-      document.querySelectorAll(".answer")[i].innerHTML = defs[randNum2].term;
-    }
+
+
+      if(remaining.includes(i) && !(terms.includes(defs[randNum2].term)))
+      {
+        document.querySelectorAll(".answer")[i].innerHTML = defs[randNum2].term;
+        terms.push(defs[randNum2].term);
+      }
+
+
 
   }
 }

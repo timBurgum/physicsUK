@@ -1,0 +1,32 @@
+body{
+text-align: center;
+}
+
+h1{
+  text-align: center;
+
+
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.canvas{
+  border: 1px dotted green;
+  margin: 15px auto 15px auto;
+}
+button{
+  margin: 10px;
+}
+input{
+  width: 40px;
+}
+.goGreen{
+  background-color: green;
+}
+.goRed{
+  background-color: red;
+}

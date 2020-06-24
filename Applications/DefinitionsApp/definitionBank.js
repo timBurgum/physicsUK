@@ -59,6 +59,37 @@ defs.push(new definition(46,"Thermal, SHM and Gravitational Fields","Specific la
 defs.push(new definition(47,"Thermal, SHM and Gravitational Fields","Boyle’s Law ","When the temperature of a gas is kept constant, the pressure and volume of the gas are inversely proportional "));
 defs.push(new definition(48,"Thermal, SHM and Gravitational Fields","Charle’s Law ","When the pressure of a gass is kept constant, the volume of the gas is directly proportional to the temperature "));
 defs.push(new definition(49,"Thermal, SHM and Gravitational Fields","Gay Lussac’s Law ","When the volume of a gas is kept constant, the pressure of the gas is directly proportional to its absolute temperature "));
+defs.push(new definition(50,"Thermal, SHM and Gravitational Fields","Angular velocity","The rate of change of angle in radians"));
+defs.push(new definition(51,"Thermal, SHM and Gravitational Fields","Centripetal force","The resultant force directed towards the centre of a circle and at 90 degrees to the direction of motion."));
+defs.push(new definition(52,"Thermal, SHM and Gravitational Fields","Centripetal acceleration","Acceleration directed at 90 degrees to the direction of motion causing a circular path"));
+defs.push(new definition(53,"Thermal, SHM and Gravitational Fields","Simple harmonic motion","Oscillation where acceleration is directly proptortional to displacement in the opposite direction"));
+defs.push(new definition(54,"Thermal, SHM and Gravitational Fields","Resonance","The result of a driving frequency being equal to the natural frequency of an object"));
+defs.push(new definition(55,"Thermal, SHM and Gravitational Fields","Gravitational field strength","The force per unit mass acting on an object in a gravitational field"));
+defs.push(new definition(56,"Thermal, SHM and Gravitational Fields","Newton's law of gravitation","The force between two point masses is directly proportional to the product of the masses and inversely proportional to the square of the separation distance"));
+defs.push(new definition(57,"Thermal, SHM and Gravitational Fields","Kepler's first law","The orbit of a planet is an elipse with Sun at the center of one foci"));
+defs.push(new definition(58,"Thermal, SHM and Gravitational Fields","Kepler's second law","A line segent joining a planet and the Sun sweeps out equal areas during equal time frames"));
+defs.push(new definition(59,"Thermal, SHM and Gravitational Fields","Kepler's third law","The square of the orbital period of a planet is directly proportional to its average distance from the Sun cubed"));
+defs.push(new definition(60,"Thermal, SHM and Gravitational Fields","Gravitational potential","The work done per unit mass to bring an object to a point in space from infinity"));
+defs.push(new definition(61,"Cosmology, Electric Fields and Medical Imaging","Electron degeneracy pressure","A outward pressure on a collapsing star as a result of the Pauli exclusion principle"));
+defs.push(new definition(62,"Cosmology, Electric Fields and Medical Imaging","Cosmological principle","The universe is homogenous and isotropic in all directions"));
+defs.push(new definition(63,"Cosmology, Electric Fields and Medical Imaging","Hubble's law","The recessional speed of a galaxy is directly proportional to its distance from the Earth"));
+defs.push(new definition(64,"Cosmology, Electric Fields and Medical Imaging","Capacitcance","Charge stored per unit potential difference"));
+defs.push(new definition(65,"Cosmology, Electric Fields and Medical Imaging","Time constant","The time taken for a capacitor to discharge to 37% its initial value"));
+defs.push(new definition(66,"Cosmology, Electric Fields and Medical Imaging","Electric field strength","Force experienced per unit posistive charge"));
+defs.push(new definition(67,"Cosmology, Electric Fields and Medical Imaging","Coulomb's law","The force between two point charges is equal to the product of of the charges and inversely proportional to the square of the separation between them"));
+defs.push(new definition(68,"Cosmology, Electric Fields and Medical Imaging","Electric potential","Work done per unit charge when bringing a positive charge to a point from infinity"));
+defs.push(new definition(69,"Cosmology, Electric Fields and Medical Imaging","Magnetic flux","The product of magnetic flux density and cross sectional area perpendicular to the magnetic field"));
+defs.push(new definition(70,"Cosmology, Electric Fields and Medical Imaging","Magnetic flux density","Weber per meter squared"));
+defs.push(new definition(71,"Cosmology, Electric Fields and Medical Imaging","Magnetic flux linkage","The product of magnetic flux and the number of turns"));
+defs.push(new definition(72,"Cosmology, Electric Fields and Medical Imaging","Faraday's law","Electromotive force is directly proportional to the rate of change of magnetic flux"));
+defs.push(new definition(73,"Cosmology, Electric Fields and Medical Imaging","Lenz's law","Induced electric current flows in a direction opposite to the field that created it"));
+defs.push(new definition(74,"Cosmology, Electric Fields and Medical Imaging","Hadron","A particle made of 3 quarks and can be affected by the strong nuclear force"));
+defs.push(new definition(75,"Cosmology, Electric Fields and Medical Imaging","Lepton","Sub atomic particles that arent affected by the strong nuclear force"));
+defs.push(new definition(76,"Cosmology, Electric Fields and Medical Imaging","Half life","The average time taken for half the number of nuclei in a sample to decay"));
+defs.push(new definition(77,"Cosmology, Electric Fields and Medical Imaging","Binding energy","The minimum energy required to separate a nucleus into its constituent parts"));
+defs.push(new definition(78,"Cosmology, Electric Fields and Medical Imaging","Fission","The splitting of a large nucleus into daughter nuclei causing the release of energy"));
+defs.push(new definition(79,"Cosmology, Electric Fields and Medical Imaging","Fusion","The joining of two light nuclei releasing energy"));
+defs.push(new definition(80,"Cosmology, Electric Fields and Medical Imaging","Acoustic impedance","The product of density and the speed of sound in a selected material"));
 
   console.log("Definitions loaded to app")
 }
