@@ -6,18 +6,31 @@
     <title>PhysicsUK</title>
     <link rel="stylesheet" href="styles.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
   </head>
   <body>
+
+
     <div class="top-section">
       <img src="siteLogo.png" alt="website-logo">
     </div>
-  <h1>This site is under construction and applications will be posted on creation.</h1>
+  <!--------------------------------------------------Selections ----------------------------------->
+  <hr>
+<div class="tabBar">
+  <ul>
+    <li class="selected">Applications</li>
+    <li class="">Useful Links</li>
+    <li class="">MarkBOT</li>
+    <li class="">Contact</li>
+  </ul>
+</div>
 
+<div class="pageInfo applications">
+  <h3>These applications are designed with the OCR A specification in mind. Come back soon for more applications.</h3>
   <div class="appButton hvr-pulse">
     <a class = "mcqText " href="Applications/MCQApp/mcqApp.html"><img class ="mcqImg border" src="Applications/MCQApp/frontLogoNoBorder.png" alt="MCQ App Button"></a>
   </div>
@@ -27,16 +40,49 @@
   <div class="appButton hvr-pulse">
     <a class = "mcqText " href="Applications/VectorsApp/index.html"><img class ="mcqImg border" src="Applications/VectorsApp/vectorsCover.png" alt="Vectors App Button"></a>
   </div>
+</div>
+
+
+<div class="pageInfo usefulLinks hidden">
+<h2>Useful links</h2>
+<a href="https://www.alevelphysicsonline.com/">A-Level Physics Online</a>
+<a href="https://www.savemyexams.co.uk/a-level-physics-ocr-new/">OCR A SaveMyExams exam questions</a>
+<a href="https://www.youtube.com/playlist?list=PL5D99A319E129A5B7">DrPhysicsA - ALevel Physics Revision Playlist</a>
+<a href="https://phet.colorado.edu/en/simulations/filter?subjects=physics&sort=alpha&view=grid">PHET Interactive Simulations</a>
+<a href="https://www.ocr.org.uk/qualifications/as-and-a-level/physics-a-h156-h556-from-2015/">OCR A Physics Website</a>
+</div>
+<div class="pageInfo markbot hidden">
+<h2>Under Contruction</h2>
+<img src="markBotLogo.png" alt="">
+</div>
+<div class="pageInfo contact hidden">
+  <h3>Contact Form - Under Construction</h3>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="fullName" placeholder="Your name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email address..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  </body>
+  </html>
+</div>
+
 
 
 
   <footer>
 
-
-    <a href='https://www.counters-free.net/'>VisitorCounters free</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5d898fe6ece40870b5e132b0347a8cffd92851f9'></script>
-   <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/709405/t/5"></script>
-
-
   </footer>
+  <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
