@@ -69,7 +69,10 @@ ul li{
   margin: 10px;
   font-size: 2.2em;
 }
-
+.markbot img{
+  width: 70%;
+  margin: 0 auto;
+}
 
 /* contact form */
 input[type=text], select, textarea {
